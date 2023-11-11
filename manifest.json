@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Event Parser",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "description": "Parse highlighted text and create Google Calendar events",
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["contextMenus", "storage", "tabs", "https://www.googleapis.com/*"]
+}
