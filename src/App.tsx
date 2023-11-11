@@ -1,9 +1,4 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="w-[200px] m-4">
       <div className="flex flex-row mb-4 place-content-center">
