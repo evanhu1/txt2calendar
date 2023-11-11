@@ -7,7 +7,8 @@
   },
   "description": "Parse highlighted text and create Google Calendar events",
   "background": {
-    "service_worker": "service-worker.js"
+    "service_worker": "service-worker.js",
+    "type": "module"
   },
   "content_scripts": [
     {
@@ -15,5 +16,8 @@
       "js": ["content.js"]
     }
   ],
-  "permissions": ["contextMenus", "storage", "tabs", "https://www.googleapis.com/*"]
+  "permissions": ["contextMenus"],
+  "icons": {
+    "16": "icon-bitty.png"
+  }
 }

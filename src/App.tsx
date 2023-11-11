@@ -5,37 +5,12 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="w-[200px]">
-      <header className="App-header">
-        <p>Hello Vite + React!</p>
-        <p className="">
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
+    <div className="w-[200px] m-4">
+      <div className="flex flex-row mb-4 place-content-center">
+        <img src="icon-bitty.png" className='w-[32px] mr-1'></img>
+        <p className="text-xl">Txt2Calendar</p>
+      </div>
+      <p className="text-base">Highlight some text, right click on it, and select Create Event!</p>
     </div>
   )
 }
